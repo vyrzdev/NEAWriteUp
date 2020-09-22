@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+    
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Synchronoicity - Project Write-up</title>
+        <meta name="description" content="The write up for the synchronoicity project">
+        <link rel="stylesheet" href="main.css">
+    </head>
+    <body>
+        <section id="title">
+            <h1>Synchronoicity</h1>
+            <span>A multi-channel stock manager for modern retail</span>
+        </section>
+
+        <hr>
+        <section id="table_of_contents">
+            <h2>Table of contents</h2>
+            <ul>
+                <li>
+                    <a href="#analysis"><h4>Analysis</h4></a>
+                    <ul>
+                        <li><a href="#analysis__problem_definition">Problem Definition</a></li>
+                        <li><a href="#analysis__suitability_of_computational">Suitability & Sustainability of Computational Approach</a></li>
+                    </ul>
+                </li>
+            </ul>
+            <br>
+        </section>
+        <hr>
+        <section id="analysis">
+            <h2>Analysis</h2>
+            <span class="subtitle">An analysis of the project viability, target market, feature requirements and more...</span>
+            <br><br>
+            <section id="analysis__problem_definition">
+                <h3>Problem Definition</h3>
+                <div class="content">
+                    <p>
+                        Many retail businesses want to start selling their products online. While small retail businesses with a focused scope may be able to find a specific sales platform such as Etsy, and meet their target market well enough, many small businesses have realised that by maintaining a presence on multiple sales platforms such as Amazon, Ebay, and Etsy all at once will help them reach a far greater audience.
+                    </p>
+                    <p>
+                        <b>The Problem</b> is that managing and tracking stock for a even mildly popular store on multiple platforms can be incredibly time consuming, and a logistical nightmare.
+                        <br><br>
+                        There are many issues that come together to make this so difficult...
+                        ALLL
+                    </p>
+                    <ul>
+                        <li>
+                            Stock management interfaces on each individual platform can be clunky and slow to use
+                        </li>
+                        <li>
+                            Individual sales platforms do not report to each other, meaning any syncronisation needs to be performed manually
+                        </li>
+                        <li>
+                            Different sales platforms have very different and unique ways of handling stock management
+                        </li>
+                    </ul>
+                    <p>
+                        Businesses tend to build systems to cope with these limitations, it's typical for businesses to either allocate portions of stock to each sales platform to avoid selling the same stock twice, or to quickly change the stock on every other sales platform upon recieving an order.
+                    </p>
+                    <p>
+                        The trouble is that these systems are often inefficient, and very vulnerable to human error. If an employee forgets to mirror a sale on other platforms, the business may accidentally sell items they dont have, need to contact the person and make alternative arrangements. This opens the business to bad reviews, and wastes time.
+                    </p>
+                </div>
+            </section>
+            <section id="analysis__suitability_of_computational">
+                <h3>Suitability & Sustainability of Computational Solutions to the Problem</h3>
+                <div class="content">    
+                    <span>Why is this task unsuitable for a human-oriented approach?</span>
+                    <p>
+                        Human error is common even at the best of times. Retail businesses with a non-techy staff are likely to make a lot of mistakes
+                        and not adhere to the strict level of accuracy required to maintain a sustainable multi-channel store.
+                    </p>
+                    <p>
+                        The labor involved is also very expensive, businesses would need to hire someone to spend all day waiting for a sale.
+                    </p>
+                    <br>
+                    <span>What problems might arise by using a computational approach?</span>
+                    <p>
+                        As the target market of this project is not generally tech-savvy, when a problem arises users may find it hard to troubleshoot and/or fix. Thus it will be important to make the interface clear and easy to use.
+                    </p>
+                    <br>
+                    <span>How might a computational approach benefit the target market?</span>
+                    <p>
+                        By using a computational approach for any deterministic and repetetive task businesses can save a lot of money on human labor. It is also far more reliable as computers don't deviate from well written instructions... (although tasks can fail/error)
+                    </p>
+                    <br>
+                    <span>How will computational methods be applied to this problem? (In general terms)</span>
+                    <p>
+                        The project will be designed with a SaaS architecture in mind, for this reason, different functions of the project will be broken into seperate microservices, and the project overall will be stateless. This will make it more scalable and extensible. It will also make the project easier to maintain by compartmentalising dedicated functionality.
+                    </p>
+                    <p>
+                        The project will utilise 'pipelining' techniques to allow greater concurrency on a user by user basis. Each user is self-contained, and is there is no sharing of data between users. Because of this, users' subroutines can be executed in parallel freely.
+                    </p>
+                </div>
+            </section>
+        </section>
+        
+        <hr>
+        
+        <section id="working_notes">
+            <h2>Working Notes (For my reference)</h2>
+            <span>Statistics must show businesses wanting to get into online retail</span>
+            <br>
+            <span></span>
+        </section>
+    </body>
+</html>
+
