@@ -53,7 +53,7 @@
                             Stock management interfaces on each individual platform can be clunky and slow to use
                         </li>
                         <li>
-                            Individual sales platforms do not report to each other, meaning any syncronisation needs to be performed manually
+                            Individual sales platforms do not report to each other, meaning any synchronisation needs to be performed manually
                         </li>
                         <li>
                             Different sales platforms have very different and unique ways of handling stock management
@@ -120,7 +120,7 @@
                         To meet this need, I should include a basic product and stock management interface which syncs
                         changes to their sales-channels.
                     </p>
-
+                    <br>
                     <span>Medium Scale Retail Businesses</span>
                     <p>
                         Medium scale businesses will likely have their own fairly robust methods for dealing with stock,
@@ -139,7 +139,40 @@
                         To meet the differing timescale and accuracy needs of medium and small scale businesses, I will make the
                         frequency of checks for changes configurable depending on the user.
                     </p>
-
+                    <br>
+                    <span>Large Scale Retail Businesses</span>
+                    <p>
+                        Large scale retail will likely have bespoke and robust systems for stock management over a multitude of locations,
+                        they will also likely have their own solutions in place for the problem of multi-channel stock management.
+                        <br>
+                        As the problem increases in scale, it becomes more and more difficult to deal with, as the slightest inaccuracy can result in faults.
+                        However, their systems may be inefficient or not user friendly, and they may be expensive to operate.
+                        <br>
+                        Larger businesses will also need to deal with conflicts and inconsistencies automatically, with minimal manual intervention.
+                        <br><br>
+                        Large retail businesses may also be concerned about storing confidential inventory information on a service
+                        that they have little control over.
+                        <br><br>
+                        In order to set myself apart from their own solution, my project should be user friendly, highly scalable at low cost, and must interface with
+                        their warehouse management software.
+                        <br>
+                        In order to automate conflict resolution, I could implement a plugin system for conflict resolution.
+                        <br><br>
+                        To mitigate data control concerns, a self-hosted option could be offered, that allows larger enterprises to operate a
+                        copy of the service on their own IT infrastructure.
+                    </p>
+                    <br>
+                    <span>Summary of Stakeholder Requirements</span>
+                    <p>
+                        Overall my project should possess the following attributes/features:
+                        <ul>
+                            <li>Easy to use interface for stock management and conflict resolutions.</li>
+                            <li>Plugin Support for bespoke sales-channels and stock records.</li>
+                            <li>Plugin Support for conflict resolution.</li>
+                            <li>Self-Hosted Deployment Options.</li>
+                            <li>High degree of cheap horizontal scalability.</li>
+                        </ul>
+                    </p>
                 </div>
             </section>
         </section>
